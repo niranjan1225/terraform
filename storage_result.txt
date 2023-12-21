@@ -1,0 +1,82 @@
+# azurerm_storage_account.storage will be created
+  + resource "azurerm_storage_account" "storage" {
+      + access_tier                       = (known after apply)
+      + account_kind                      = "StorageV2"
+      + account_replication_type          = "LRS"
+      + account_tier                      = "Standard"
+      + allow_nested_items_to_be_public   = true
+      + enable_https_traffic_only         = true
+      + id                                = (known after apply)
+      + infrastructure_encryption_enabled = false
+      + is_hns_enabled                    = false
+      + large_file_share_enabled          = (known after apply)
+      + location                          = "eastus"
+      + min_tls_version                   = "TLS1_2"
+      + name                              = "dataacc"
+      + nfsv3_enabled                     = false
+      + primary_access_key                = (sensitive value)
+      + primary_blob_connection_string    = (sensitive value)
+      + primary_blob_endpoint             = (known after apply)
+      + primary_blob_host                 = (known after apply)
+      + primary_connection_string         = (sensitive value)
+      + primary_dfs_endpoint              = (known after apply)
+      + primary_dfs_host                  = (known after apply)
+      + primary_file_endpoint             = (known after apply)
+      + primary_file_host                 = (known after apply)
+      + primary_location                  = (known after apply)
+      + primary_queue_endpoint            = (known after apply)
+      + primary_queue_host                = (known after apply)
+      + primary_table_endpoint            = (known after apply)
+      + primary_table_host                = (known after apply)
+      + primary_web_endpoint              = (known after apply)
+      + primary_web_host                  = (known after apply)
+      + queue_encryption_key_type         = "Service"
+      + resource_group_name               = "1-522d0b26-playground-sandbox"
+      + secondary_access_key              = (sensitive value)
+      + secondary_blob_connection_string  = (sensitive value)
+      + secondary_blob_endpoint           = (known after apply)
+      + secondary_blob_host               = (known after apply)
+      + secondary_connection_string       = (sensitive value)
+      + secondary_dfs_endpoint            = (known after apply)
+      + secondary_dfs_host                = (known after apply)
+      + secondary_file_endpoint           = (known after apply)
+      + secondary_file_host               = (known after apply)
+      + secondary_location                = (known after apply)
+      + secondary_queue_endpoint          = (known after apply)
+      + secondary_queue_host              = (known after apply)
+      + secondary_table_endpoint          = (known after apply)
+      + secondary_table_host              = (known after apply)
+      + secondary_web_endpoint            = (known after apply)
+      + secondary_web_host                = (known after apply)
+      + shared_access_key_enabled         = true
+      + table_encryption_key_type         = "Service"
+
+      + identity {
+          + principal_id = (known after apply)
+          + tenant_id    = (known after apply)
+          + type         = "SystemAssigned"
+        }
+
+      + network_rules {
+          + bypass                     = (known after apply)
+          + default_action             = "Allow"
+          + ip_rules                   = (known after apply)
+          + virtual_network_subnet_ids = (known after apply)
+        }
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+azurerm_storage_account.storage: Creating...
+azurerm_storage_account.storage: Still creating... [10s elapsed]
+azurerm_storage_account.storage: Still creating... [20s elapsed]
+azurerm_storage_account.storage: Still creating... [30s elapsed]
+azurerm_storage_account.storage: Creation complete after 35s [id=/subscriptions/2213e8b1-dbc7-4d54-8aff-b5e315df5e5b/resourceGroups/1-522d0b26-playground-sandbox/providers/Microsoft.Storage/storageAccounts/dataacc]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
